@@ -1,1 +1,20 @@
 <h1>THis is the article index page</h1>
+
+<div class="articles">
+<% @articles.each do |article| %>
+  <div class="article">
+  <h3><%= link_to article.title, article_path(article) %></h3>
+  <div class="edit_btns">
+      <%= link_to "Edit Article", edit_article_path(article) %>
+  </div>
+
+  <div class="delete_btns">
+      <%= link_to "Delete Article", article, method: :delete %>
+  </div>
+
+    <div class="clearfix"></div>
+<% end %>
+</div>
+
+<h5 class="btns"><%= link_to "Create New Article", new_article_path  %></h5>
+</div>

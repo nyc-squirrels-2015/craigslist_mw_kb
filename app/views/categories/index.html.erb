@@ -1,3 +1,10 @@
 <h1>THIS IS THE CATEGORY INDEX PAGE</h1>
 
-<h3>(THIS SHOULD ALSO BE THE ROOT)</h3>
+<div class="categories">
+  <h3>Categories</h3>
+  <ul>
+    <% @categories.each do |cat| %>
+      <li><%= link_to cat.title, category_path(cat) %></li>
+    <% end %>
+  </ul>
+</div>

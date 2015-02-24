@@ -1,0 +1,36 @@
+body{
+  background-color: #a7ffb5;
+  background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2012/12/12/24469/big_thumb_5ab2837dd198927b05dd2b56b14d523b.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-opacity: 0.5;
+  text-align: center;
+}
+
+.btns{
+  font-size: 20px;
+}
+
+.edit_btns{
+  display: inline-block;
+  float: left;
+  border: 2px solid black;
+}
+
+.delete_btns{
+  display: inline-block;
+  float: right;
+  border: 2px solid black;
+
+}
+
+.clearfix{
+  clear: both;
+}
+
+.article{
+  border: 2px solid black;
+}
+

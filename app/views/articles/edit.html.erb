@@ -1,4 +1,6 @@
-<div class='form'>
+<h1> EDIT YOUR ARTICLE BELOW!</h1>
+
+<div class="form">
   <%= form_for @article do |f| %>
     <div class="title">
       <%= f.label :title %>
@@ -8,10 +10,6 @@
     <div class="description">
       <%= f.label :description %>
       <%= f.text_area :description, size: '60x6' %>
-    </div>
-
-    <div class='drop_down'>
-      <%= select_tag "article[category_id]", options_from_collection_for_select(@categories, "id", "title") %>
     </div>
 
     <div class='submit'>

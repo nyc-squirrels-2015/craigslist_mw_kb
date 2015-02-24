@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   resources :users, :categories, :articles
 
+  root 'articles#index'
+
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
